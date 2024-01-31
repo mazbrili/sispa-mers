@@ -127,9 +127,6 @@ $pt = new Gejala;
     var ss = waktu.getSeconds() + "";  //memunculkan jam:menit:detik dengan menambahkan angka 0 jika angkanya cuma satu digit (0-9)
     document.getElementById("clock").innerHTML = (sh.length==1?"0"+sh:sh) + ":" + (sm.length==1?"0"+sm:sm) + ":" + (ss.length==1?"0"+ss:ss);
 }
- function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'id'}, 'google_translate_element');
-  }
 </script>
 
 </head>

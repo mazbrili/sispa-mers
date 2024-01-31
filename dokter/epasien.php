@@ -14,7 +14,7 @@ $p->TampilSatuData($_GET['id_pasien']);
 			<div class="page-breadcrumb">
 				<div class="row align-items-center">
 					<div class="col-5">
-						<h4 class="page-title">Manajemen Ubah Data Pasien</h4>
+						<h4 class="page-title">Manajemen Ubah Data User PC</h4>
 						<div class="d-flex align-items-center">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#">Home</a></li>

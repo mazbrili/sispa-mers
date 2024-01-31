@@ -114,9 +114,9 @@ $cl->Count();
             <div class="bg-faded rounded p-5">
               <h2 class="section-heading mb-4">
                 <!-- <span class="section-heading-upper">Strong Coffee, Strong Roots</span> -->
-                <span class="section-heading-lower">Panduan Tata Cara Diagnosa Penyakit</span>
+                <span class="section-heading-lower">Panduan Tata Cara Diagnosa Masalah PC</span>
               </h2>
-              <p style="text-align: justify;">Sistem Pakar diagnosa penyakit MERS-CoV merupakan sebuah sistem yang mampu melakukan diagnosa penyakit MERS-CoV berdasarkan gejala yang dapat dirasakan. untuk melakukan diagnosa penyakit, terdapat beberapa tatacara dan aturan yang harus dilakukan, adalah sebagai berikut:</p>
+              <p style="text-align: justify;">Sistem Pakar diagnosa masalah PC merupakan sebuah sistem yang mampu melakukan diagnosa Pc berdasarkan masukan :</p>
 
               <h3><span class="section-heading-upper">BAGAIMANA CARA MELAKUKAN DIAGNOSA PENYAKIT?</span></h3>
               <p class="mb-0">Diagnosa penyakit dapat dilakukan apabila telah menginput 2 gejala atau lebih, dikarenakan untuk mendiagnosa sebuah penyakit dibutuhkan minimal 2 buah gejala agar penyakit dapat didiagnosa.</p>
@@ -144,7 +144,6 @@ $cl->Count();
   <!-- Bootstrap core JavaScript -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script type="text/javascript">
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
