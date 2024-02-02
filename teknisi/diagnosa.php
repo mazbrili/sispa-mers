@@ -130,7 +130,7 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
 
                             <?php } ?>
                             <br><hr>
-                            <input type="submit" value="Diagnosa Penyakit" name="ok" class="btn btn-danger text-white">
+                            <input type="submit" value="Diagnosa kerusakan" name="ok" class="btn btn-danger text-white">
                         </form>
                     </div>
                 </div>

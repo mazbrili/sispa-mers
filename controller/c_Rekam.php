@@ -16,7 +16,7 @@ class Rekam
 			$data[$i]['id_riwayat'] = $d['id_riwayat'];
 			$data[$i]['tanggal'] = $d['tanggal'];
 			$data[$i]['gejala'] = $d['gejala'];
-			$data[$i]['penyakit'] = $d['penyakit'];
+			$data[$i]['kerusakan'] = $d['kerusakan'];
 			$data[$i]['nilai'] = $d['nilai'];
 			$data[$i]['persentase'] = $d['persentase'];
 			$i++;

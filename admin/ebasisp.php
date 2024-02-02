@@ -1,7 +1,7 @@
 <?php include '_header.php'; 
 
-include "../controller/c_Penyakit.php";
-$t = new Penyakit;
+include "../controller/c_kerusakan.php";
+$t = new kerusakan;
 $data = $t->TampilSemua();
 
 include "../controller/c_Gejala.php";
@@ -50,13 +50,13 @@ $ttt->TampilSatuData($_GET['id']);
 					<div class="card-body">
 						<form id="myform" method="post" class="form-horizontal form-material" action="../ProsesA/e_basisp.php">
 							<div class="form-group">
-								<label class="col-md-12">Nama Penyakit</label>
+								<label class="col-md-12">Nama kerusakan</label>
 								<div class="col-md-12">
 									<input type="hidden" value="<?php print $_GET['id']; ?>" name="id">
-										<select class="form-control form-control-line" name="id_penyakit">
+										<select class="form-control form-control-line" name="id_kerusakan">
 											<?php foreach($data as $d){
 														?>
-														<option <?php if($ttt->id_penyakit == $d['id'])  { ?> selected <?php } ?> value="<?php print $d['id']; ?>"><?php print $d['nama']; ?></option>
+														<option <?php if($ttt->id_kerusakan == $d['id'])  { ?> selected <?php } ?> value="<?php print $d['id']; ?>"><?php print $d['nama']; ?></option>
 													<?php } ?>
 										</select>
 									</div>

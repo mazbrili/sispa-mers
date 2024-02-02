@@ -17,10 +17,10 @@ $pt = new Gejala;
   <meta name="author" content="">
   <link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
-  <title>Sispa - Sistem Pakar Diagnosa Penyakit MERS-CoV</title>
+  <title>Sispa - Sistem Pakar Diagnosa kerusakan MERS-CoV</title>
 
   <!-- SEO -->
-  <meta name="keywords" content="Sispa, Sistem Pakar, Sistem Pakar Diagnosa MERS-CoV, MERS-CoV, Diagnos MERS-CoV, Fandy TIC, Fandy Hidayat, Diagnosa Penyakit, Apa itu Mers-Cov?,Middle East Respiratory Syndrome Corona Virus, Corona Virus">
+  <meta name="keywords" content="Sispa, Sistem Pakar, Sistem Pakar Diagnosa MERS-CoV, MERS-CoV, Diagnos MERS-CoV, Fandy TIC, Fandy Hidayat, Diagnosa kerusakan, Apa itu Mers-Cov?,Middle East Respiratory Syndrome Corona Virus, Corona Virus">
 
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -139,7 +139,7 @@ $pt = new Gejala;
   <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" id="clock" style="color: white"></a></button>
 
   <h1 class="site-heading text-center d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Diagnosa Penyakit MERS-CoV</span>
+    <span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan </span>
     <span class="site-heading-lower">Sistem Pakar</span>
   </h1>
 
@@ -161,7 +161,7 @@ $pt = new Gejala;
             </a>
           </li>
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="diagnosa.php">Diagnosa Penyakit</a>
+            <a class="nav-link text-uppercase text-expanded" href="diagnosa.php">Diagnosa kerusakan</a>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="panduan.php">Panduan</a>
@@ -195,7 +195,7 @@ $pt = new Gejala;
               <?php } ?>
               <br><hr>
               <p style="color: red">*Minimal pilih 2 Gejala</p>
-              <button type="submit" value="Diagnosa Penyakit" class="btn btn-danger text-white">Diagnosa</button>
+              <button type="submit" value="Diagnosa kerusakan" class="btn btn-danger text-white">Diagnosa</button>
             </form>
           </div>
         </div>

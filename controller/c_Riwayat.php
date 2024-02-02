@@ -15,7 +15,7 @@ class Riwayat
 			$data[$i]['id_diagnosa'] = $d['id_diagnosa'];
 			$data[$i]['tanggal'] = $d['tanggal'];
 			$data[$i]['gejala'] = $d['gejala'];
-			$data[$i]['penyakit'] = $d['penyakit'];
+			$data[$i]['kerusakan'] = $d['kerusakan'];
 			$data[$i]['nilai'] = $d['nilai'];
 			$data[$i]['persentase'] = $d['persentase'];
 			$i++;

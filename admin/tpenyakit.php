@@ -1,7 +1,7 @@
 <?php include '_header.php'; 
 
-include "../controller/c_Penyakit.php";
-$pt = new Penyakit;
+include "../controller/c_kerusakan.php";
+$pt = new kerusakan;
 $pt->TampilAngka();
 ?>
 		<!-- ============================================================== -->
@@ -14,12 +14,12 @@ $pt->TampilAngka();
 			<div class="page-breadcrumb">
 				<div class="row align-items-center">
 					<div class="col-5">
-						<h4 class="page-title">Manajemen Tambah Tingkatan Penyakit</h4>
+						<h4 class="page-title">Manajemen Tambah Tingkatan kerusakan</h4>
 						<div class="d-flex align-items-center">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#">Home</a></li>
-								<li class="breadcrumb-item" aria-current="page"><a href="penyakit.php">Tingkatan Penyakit</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Tambah Tingkatan Penyakit</li>
+								<li class="breadcrumb-item" aria-current="page"><a href="kerusakan.php">Tingkatan kerusakan</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Tambah Tingkatan kerusakan</li>
 							</ol>
 						</div>
 					</div>
@@ -40,21 +40,21 @@ $pt->TampilAngka();
 					<div class="col-lg-8 col-xlg-9 col-md-7">
 						<div class="card">
 							<div class="card-body">
-								<form method="post" class="form-horizontal form-material" action="../ProsesA/t_penyakit.php">
+								<form method="post" class="form-horizontal form-material" action="../ProsesA/t_kerusakan.php">
 									<div class="form-group">
-										<label class="col-md-12">Kode Penyakit</label>
+										<label class="col-md-12">Kode kerusakan</label>
 										<div class="col-md-12">
 											<input type="text" value="P<?php print $pt->nilai+1; ?>" class="form-control form-control-line" name="kode" readonly="true">
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-12">Nama Tingkatan Penyakit</label>
+										<label class="col-md-12">Nama Tingkatan kerusakan</label>
 										<div class="col-md-12">
 											<input type="text" class="form-control form-control-line" name="nama" required>
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="example-email" class="col-md-12">Keterangan Tingkatan Penyakit</label>
+										<label for="example-email" class="col-md-12">Keterangan Tingkatan kerusakan</label>
 										<div class="col-md-12">
 											<input type="text" class="form-control form-control-line" name="kett">
 										</div>

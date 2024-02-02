@@ -127,7 +127,7 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                                     }else{
                                         $sql = "SELECT GROUP_CONCAT(b.id), a.ds
                                         FROM ds_aturan a
-                                        JOIN ds_penyakit b ON a.id_penyakit=b.id
+                                        JOIN ds_kerusakan b ON a.id_kerusakan=b.id
                                         WHERE a.id_gejala IN(".implode(',',$_POST['gejala']).") 
                                         GROUP BY a.id_gejala";
                                         $result= mysqli_query($con, $sql);
@@ -137,7 +137,7 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                                         }
 
                                         //--- menentukan environement
-                                        $sql="SELECT GROUP_CONCAT(id) FROM ds_penyakit";
+                                        $sql="SELECT GROUP_CONCAT(id) FROM ds_kerusakan";
                                         $result= mysqli_query($con,$sql);
                                         $row=$result->fetch_row();
                                         $fod=$row[0];
@@ -201,14 +201,14 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                                         //--- menampilkan hasil akhir
                                         $codes=array_keys($densitas_baru);
                                         $sql="SELECT GROUP_CONCAT(nama) 
-                                        FROM ds_penyakit 
+                                        FROM ds_kerusakan 
                                         WHERE id IN('{$codes[0]}')";
                                         $result=mysqli_query($con,$sql);
                                         $row=$result->fetch_row();
-                                        echo "Terdeteksi penyakit <b>{$row[0]}</b> dengan derajat kepercayaan ".round($densitas_baru[$codes[0]]*100,2)."% <br><br>";
+                                        echo "Terdeteksi kerusakan <b>{$row[0]}</b> dengan derajat kepercayaan ".round($densitas_baru[$codes[0]]*100,2)."% <br><br>";
 
-                                        //--- menampilkan keterangan dari penyakit
-                                        $queries = "SELECT kett FROM ds_penyakit WHERE nama = '$row[0]'";
+                                        //--- menampilkan keterangan dari kerusakan
+                                        $queries = "SELECT kett FROM ds_kerusakan WHERE nama = '$row[0]'";
                                         $result = mysqli_query($con,$queries);
                                         $value = mysqli_fetch_object($result);
                                         echo "Keterangan :<br>".$value->kett."<br><br>";
@@ -226,8 +226,8 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                                             //-- insert gejala
                                             $gejala .= $i.". ".$value->nama."<br>";
                                         }
-                                        //-- insert penyakit
-                                        $penyakit = $row[0];
+                                        //-- insert kerusakan
+                                        $kerusakan = $row[0];
                                         //--insert nilai
                                         $nilai = $densitas_baru[$codes[0]];
                                         //-- insert persentase
@@ -238,7 +238,7 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                                         $id_pasien = $_POST['id_pasien'];
 
                                         //--- memasukkan hasil diagnosa ke database
-                                        $input = mysqli_query($con,"INSERT INTO riwayat (id_pasien, tanggal, gejala, penyakit, nilai, persentase) values('$id_pasien', '$tanggal', '$gejala', '$penyakit', '$nilai', '$persentase')");
+                                        $input = mysqli_query($con,"INSERT INTO riwayat (id_pasien, tanggal, gejala, kerusakan, nilai, persentase) values('$id_pasien', '$tanggal', '$gejala', '$kerusakan', '$nilai', '$persentase')");
                                     }
                                 } else {
                                     ?>

@@ -14,10 +14,10 @@ $cl->Count();
   <meta name="author" content="Fandy Hidayat, Fandy TIC">
   <link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
-  <title>Sispa - Sistem Pakar Diagnosa Penyakit MERS-CoV</title>
+  <title>Sispa - Sistem Pakar Diagnosa kerusakan MERS-CoV</title>
 
   <!-- SEO -->
-  <meta name="keywords" content="Sispa, Sistem Pakar, Sistem Pakar Diagnosa MERS-CoV, MERS-CoV, Diagnos MERS-CoV, Fandy TIC, Fandy Hidayat, Diagnosa Penyakit, Apa itu Mers-Cov?,Middle East Respiratory Syndrome Corona Virus, Corona Virus">
+  <meta name="keywords" content="Sispa, Sistem Pakar, Sistem Pakar Diagnosa MERS-CoV, MERS-CoV, Diagnos MERS-CoV, Fandy TIC, Fandy Hidayat, Diagnosa kerusakan, Apa itu Mers-Cov?,Middle East Respiratory Syndrome Corona Virus, Corona Virus">
 
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -94,7 +94,7 @@ function googleTranslateElementInit() {
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="diagnosa.php">Diagnosa Penyakit</a>
+            <a class="nav-link text-uppercase text-expanded" href="diagnosa.php">Diagnosa kerusakan</a>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="panduan.php">Panduan</a>
@@ -133,7 +133,7 @@ function googleTranslateElementInit() {
               <span class="section-heading-upper">Tentang</span>
               <span class="section-heading-lower">DiagPro-PC</span>
             </h2>
-            <p class="mb-0" style="text-align: justify;">MERS CoV adalah singkatan dari Middle East Respiratory Syndrome Corona Virus. Keberadaan virus ini pertama kali dilaporkan pada bulan September 2012 di Arab Saudi. Virus ini merupakan jenis baru dari kelompok Corona virus (Novel Corona Virus) namun  berbeda dengan  virus Severe Acute Respiratory Syndrome (SARS) pada tahun 2003. Gejala apabila terserang Virus Mers CoV adalah demam, batuk dan sesak nafas, bersifat akut, biasanya pasien memiliki penyakit ko-morbid/penyerta dan memiliki inkubasi 2-14 hari.</p><br>
+            <p class="mb-0" style="text-align: justify;">MERS CoV adalah singkatan dari Middle East Respiratory Syndrome Corona Virus. Keberadaan virus ini pertama kali dilaporkan pada bulan September 2012 di Arab Saudi. Virus ini merupakan jenis baru dari kelompok Corona virus (Novel Corona Virus) namun  berbeda dengan  virus Severe Acute Respiratory Syndrome (SARS) pada tahun 2003. Gejala apabila terserang Virus Mers CoV adalah demam, batuk dan sesak nafas, bersifat akut, biasanya pasien memiliki kerusakan ko-morbid/penyerta dan memiliki inkubasi 2-14 hari.</p><br>
           </div>
         </div>
       </div>

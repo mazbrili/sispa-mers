@@ -2,13 +2,13 @@
 /**
  * 
  */
-class Penyakit
+class kerusakan
 {
 	
 	function TampilSemua()
 	{
 		include "../koneksi/koneksi.php";
-		$query = mysqli_query($con, "SELECT * from ds_penyakit");
+		$query = mysqli_query($con, "SELECT * from ds_kerusakan");
 		$i = 1;
 		while($d = mysqli_fetch_array($query))
 		{
@@ -20,28 +20,28 @@ class Penyakit
 		return $data;
 	}
 
-	function InsertPenyakit($nama, $kett){
+	function Insertkerusakan($nama, $kett){
 		include "../koneksi/koneksi.php";
-		$query = mysqli_query($con, "INSERT into ds_penyakit ( nama, kett)
+		$query = mysqli_query($con, "INSERT into ds_kerusakan ( nama, kett)
 			values('$nama', '$kett')");
 	}
 
-	function HapusPenyakit($id)
+	function Hapuskerusakan($id)
 	{
 		include "../koneksi/koneksi.php";
-		$query = mysqli_query($con, "DELETE FROM ds_penyakit WHERE id = '$id'");
+		$query = mysqli_query($con, "DELETE FROM ds_kerusakan WHERE id = '$id'");
 	}
 
-	function EditPenyakit($id,$nama,$kett)
+	function Editkerusakan($id,$nama,$kett)
 	{
 		include "../koneksi/koneksi.php";
-		$query = mysqli_query($con, "UPDATE ds_penyakit set nama='$nama',kett='$kett' WHERE id='$id'");
+		$query = mysqli_query($con, "UPDATE ds_kerusakan set nama='$nama',kett='$kett' WHERE id='$id'");
 	}
 
 	function TampilSatuData($id)
 	{
 		include "../koneksi/koneksi.php";
-		$query = mysqli_query($con, "SELECT * FROM ds_penyakit WHERE id = '$id'");
+		$query = mysqli_query($con, "SELECT * FROM ds_kerusakan WHERE id = '$id'");
 		$p = mysqli_fetch_object($query);
 		$this->id = $p->id;
 		$this->nama = $p->nama;
@@ -51,7 +51,7 @@ class Penyakit
 	function TampilAngka()
 	{
 		include "../koneksi/koneksi.php";
-		$query = mysqli_query($con, "SELECT max(id) as nilai FROM ds_penyakit");
+		$query = mysqli_query($con, "SELECT max(id) as nilai FROM ds_kerusakan");
 		$g = mysqli_fetch_object($query);
 		$this->nilai = $g->nilai;
 	}

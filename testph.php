@@ -17,10 +17,10 @@ $dg = new Diagnosa;
 	<meta name="author" content="">
 	<link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
-	<title>Sispa - Sistem Pakar Diagnosa Penyakit MERS-CoV</title>
+	<title>Sispa - Sistem Pakar Diagnosa Kerusakan PC</title>
 
 	<!-- SEO -->
-  <meta name="keywords" content="Sispa, Sistem Pakar, Sistem Pakar Diagnosa MERS-CoV, MERS-CoV, Diagnos MERS-CoV, Fandy TIC, Fandy Hidayat, Diagnosa Penyakit, Apa itu Mers-Cov?,Middle East Respiratory Syndrome Corona Virus, Corona Virus">
+  <meta name="keywords" content="embuhlah">
 
 	<!-- Bootstrap core CSS -->
 	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -74,7 +74,7 @@ function googleTranslateElementInit() {
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" id="clock" style="color: white"></a></button>
 
 	<h1 class="site-heading text-center d-none d-lg-block">
-		<span class="site-heading-upper text-primary mb-3">Diagnosa Penyakit MERS-CoV</span>
+		<span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan MERS-CoV</span>
 		<span class="site-heading-lower">Sistem Pakar</span>
 	</h1>
 
@@ -96,7 +96,7 @@ function googleTranslateElementInit() {
 						</a>
 					</li>
 					<li class="nav-item active px-lg-4">
-						<a class="nav-link text-uppercase text-expanded" href="diagnosa.php">Diagnosa Penyakit</a>
+						<a class="nav-link text-uppercase text-expanded" href="diagnosa.php">Diagnosa kerusakan</a>
 					</li>
 					<li class="nav-item px-lg-4">
 						<a class="nav-link text-uppercase text-expanded" href="panduan.php">Panduan</a>
@@ -116,7 +116,7 @@ function googleTranslateElementInit() {
 						<div class="bg-faded rounded p-5">
 							<h2 class="section-heading mb-4">
 								<!-- <span class="section-heading-upper">Strong Coffee, Strong Roots</span> -->
-								<span class="section-heading-lower">Hasil Diagnosa Penyakit</span>
+								<span class="section-heading-lower">Hasil Diagnosa kerusakan</span>
 							</h2>
 							<p style="text-align: justify;">
 								<?php
@@ -125,7 +125,7 @@ function googleTranslateElementInit() {
 								if(isset($_POST['gejala'])){
 										$sql = "SELECT GROUP_CONCAT(b.id), a.ds
 										FROM ds_aturan a
-										JOIN ds_penyakit b ON a.id_penyakit=b.id
+										JOIN ds_kerusakan b ON a.id_kerusakan=b.id
 										WHERE a.id_gejala IN(".implode(',',$_POST['gejala']).") 
 										GROUP BY a.id_gejala";
 										$result= mysqli_query($con, $sql);
@@ -135,7 +135,7 @@ function googleTranslateElementInit() {
 										}
 
 										//--- menentukan environement
-										$sql="SELECT GROUP_CONCAT(id) FROM ds_penyakit";
+										$sql="SELECT GROUP_CONCAT(id) FROM ds_kerusakan";
 										$result= mysqli_query($con,$sql);
 										$row=$result->fetch_row();
 										$fod=$row[0];
@@ -161,11 +161,11 @@ function googleTranslateElementInit() {
 										//--- menampilkan hasil akhir
 										$codes=array_keys($densitas_baru);
 										$sql="SELECT GROUP_CONCAT(nama) 
-										FROM ds_penyakit 
+										FROM ds_kerusakan 
 										WHERE id IN('{$codes[0]}')";
 										$result=mysqli_query($con,$sql);
 										$row=$result->fetch_row();
-										echo "Terdeteksi penyakit <b>{$row[0]}</b> dengan derajat kepercayaan ".round($densitas_baru[$codes[0]]*100,2)."% <br><br>";
+										echo "Terdeteksi kerusakan <b>{$row[0]}</b> dengan derajat kepercayaan ".round($densitas_baru[$codes[0]]*100,2)."% <br><br>";
 								} ?>
 							</p>
 

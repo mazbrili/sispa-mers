@@ -47,8 +47,8 @@ $r = new Riwayat;
                                   <tr>
                                     <th style="color: white;" width="5%">ID</th>
                                     <th style="color: white;" width="16%">Tanggal dan Waktu</th>
-                                    <th style="color: white;">Gejala Penyakit</th>
-                                    <th style="color: white;">Nama Penyakit</th>
+                                    <th style="color: white;">Gejala kerusakan</th>
+                                    <th style="color: white;">Nama kerusakan</th>
                                     <th style="color: white;" width="9%">Nilai DS</th>
                                     <th style="color: white;" width="5%">Persentase</th>
                                     <th style="color: white;" width="5%">Aksi</th>
@@ -78,7 +78,7 @@ $r = new Riwayat;
                                         <td><?php print $i; ?></td>
                                         <td><?php print $d['tanggal']; ?></td>
                                         <td><?php print $d['gejala']; ?></td>
-                                        <td><?php print $d['penyakit']; ?></td>
+                                        <td><?php print $d['kerusakan']; ?></td>
                                         <td><?php print $d['nilai']; ?></td>
                                         <td><?php print $d['persentase']; ?></td>
                                         <td>

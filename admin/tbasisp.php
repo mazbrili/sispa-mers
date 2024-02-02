@@ -1,7 +1,7 @@
 <?php include '_header.php'; 
 
-include "../controller/c_Penyakit.php";
-$t = new Penyakit;
+include "../controller/c_kerusakan.php";
+$t = new kerusakan;
 $data = $t->TampilSemua();
 
 include "../controller/c_Gejala.php";
@@ -49,9 +49,9 @@ $data2 = $tt->TampilSemua();
 								<div class="form-group">
 									<table class="table" id="dynamic_field">
 										<tr>
-											<td>Tingkatan Penyakit :</td>
+											<td>Tingkatan kerusakan :</td>
 											<td>
-												<select class="form-control form-control-line" name="id_penyakit">
+												<select class="form-control form-control-line" name="id_kerusakan">
 													<?php foreach($data as $d){
 														?>
 														<option value="<?php print $d['id']; ?>"><?php print $d['nama']; ?></option>
@@ -82,9 +82,9 @@ $data2 = $tt->TampilSemua();
 									
 								</div>
 								<!-- <div class="form-group">
-									<label class="col-md-12">Nama Penyakit</label>
+									<label class="col-md-12">Nama kerusakan</label>
 									<div class="col-md-12">
-										<select class="form-control form-control-line" name="id_penyakit">
+										<select class="form-control form-control-line" name="id_kerusakan">
 											<?php foreach($data as $d){
 												?>
 												<option value="<?php print $d['id']; ?>"><?php print $d['nama']; ?></option>

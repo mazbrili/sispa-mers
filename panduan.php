@@ -14,10 +14,10 @@ $cl->Count();
   <meta name="author" content="Fandy Hidayat, Fandy TIC">
   <link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
-  <title>Sispa - Sistem Pakar Diagnosa Penyakit MERS-CoV</title>
+  <title>Sispa - Sistem Pakar Diagnosa Kerusakan PC</title>
 
   <!-- SEO -->
-  <meta name="keywords" content="Sispa, Sistem Pakar, Sistem Pakar Diagnosa MERS-CoV, MERS-CoV, Diagnos MERS-CoV, Fandy TIC, Fandy Hidayat, Diagnosa Penyakit, Apa itu Mers-Cov?,Middle East Respiratory Syndrome Corona Virus, Corona Virus">
+  <meta name="keywords" content="gapake seo">
 
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -71,7 +71,7 @@ $cl->Count();
   <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" id="clock" style="color: white"></a></button>
 
   <h1 class="site-heading text-center d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Diagnosa Penyakit MERS-CoV</span>
+    <span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan MERS-CoV</span>
     <span class="site-heading-lower">Sistem Pakar</span>
   </h1>
 
@@ -93,7 +93,7 @@ $cl->Count();
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="diagnosa.php">Diagnosa Penyakit</a>
+            <a class="nav-link text-uppercase text-expanded" href="diagnosa.php">Diagnosa Kerusakan</a>
           </li>
           <li class="nav-item active px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="panduan.php">Panduan</a>
@@ -118,16 +118,16 @@ $cl->Count();
               </h2>
               <p style="text-align: justify;">Sistem Pakar diagnosa masalah PC merupakan sebuah sistem yang mampu melakukan diagnosa Pc berdasarkan masukan :</p>
 
-              <h3><span class="section-heading-upper">BAGAIMANA CARA MELAKUKAN DIAGNOSA PENYAKIT?</span></h3>
-              <p class="mb-0">Diagnosa penyakit dapat dilakukan apabila telah menginput 2 gejala atau lebih, dikarenakan untuk mendiagnosa sebuah penyakit dibutuhkan minimal 2 buah gejala agar penyakit dapat didiagnosa.</p>
+              <h3><span class="section-heading-upper">BAGAIMANA CARA MELAKUKAN DIAGNOSA KERUSAKAN PC?</span></h3>
+              <p class="mb-0">Diagnosa kerusakan dapat dilakukan apabila telah menginput 2 gejala atau lebih, dikarenakan untuk mendiagnosa sebuah kerusakan dibutuhkan minimal 2 buah gejala agar  dapat didiagnosa.</p>
 
               <br>
               <h3><span class="section-heading-upper">BAGAIMANA JIKA GEJALA YANG ANDA RASAKAN TIDAK TERDAPAT DI SISTEM?</span></h3>
-              <p class="mb-0">Pada saat ini hanya beberapa gejala dan tingkatan penyakit yang dapat didiagnosa oleh sistem, maka dari itu proses diagnosa penyakit hanya bisa dilakukan jika gejala dan penyakit sudah terdaftar pada sistem.</p>
+              <p class="mb-0">Pada saat ini hanya beberapa gejala dan tingkatan kerusakan yang dapat didiagnosa oleh sistem, maka dari itu proses diagnosa kerusakan hanya bisa dilakukan jika gejala dan kerusakan sudah terdaftar pada sistem.</p>
 
               <br>
-              <h3><span class="section-heading-upper">APAKAH DIAGNOSA PENYAKIT PADA SISTEM SUDAH 100% BENAR?</span></h3>
-              <p class="mb-0">Diagnosa penyakit pada sistem dilakukan dengan perhitungan yang menggunakan metode <i>Dempster-Shafer</i> dengan nilai kepercayaan bersumber dari pakar/dokter ahli paru-paru, guna melakukan upaya penanganan dini terhadap penyakit tersebut. tetapi akan lebih baik jika melakukan konsultasi ulang bersama dokter ahli paru-paru, agar masalah yang anda hadapi dapat ditangani lebih baik.</p>
+              <h3><span class="section-heading-upper">APAKAH DIAGNOSA kerusakan PADA SISTEM SUDAH 100% BENAR?</span></h3>
+              <p class="mb-0">Diagnosa kerusakan pada sistem dilakukan dengan perhitungan yang menggunakan metode <i>Dempster-Shafer</i> dengan nilai kepercayaan bersumber dari pakar/dokter ahli paru-paru, guna melakukan upaya penanganan dini terhadap kerusakan tersebut. tetapi akan lebih baik jika melakukan konsultasi ulang bersama dokter ahli paru-paru, agar masalah yang anda hadapi dapat ditangani lebih baik.</p>
             </div>
           </div>
         </div>

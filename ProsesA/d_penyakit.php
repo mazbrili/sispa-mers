@@ -1,13 +1,13 @@
 <?php  
-include "../controller/c_Penyakit.php";
+include "../controller/c_kerusakan.php";
 
-$hapus = new Penyakit;
+$hapus = new kerusakan;
 
 $id = $_GET['id'];
 if (!empty($id)) {
-	$hapus->HapusPenyakit($id);
-	header('location: ../admin/penyakit.php');
+	$hapus->Hapuskerusakan($id);
+	header('location: ../admin/kerusakan.php');
 } else {
-	header('location: ../admin/penyakit.php');
+	header('location: ../admin/kerusakan.php');
 }
 ?>
