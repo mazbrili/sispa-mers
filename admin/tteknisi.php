@@ -1,8 +1,4 @@
 <?php include '_header.php';
-
-include "../controller/c_Admin.php";
-$g = new Admin;
-$g->TampilDataAdmin($_GET['id_admin']);
 ?>		
 		<!-- ============================================================== -->
 		<!-- Page wrapper  -->
@@ -14,12 +10,12 @@ $g->TampilDataAdmin($_GET['id_admin']);
 			<div class="page-breadcrumb">
 				<div class="row align-items-center">
 					<div class="col-5">
-						<h4 class="page-title">Manajemen Ubah Data Dokter</h4>
+						<h4 class="page-title">Tambah teknisi</h4>
 						<div class="d-flex align-items-center">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#">Home</a></li>
-								<li class="breadcrumb-item" aria-current="page"><a href="dokter.php">Dokter</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Ubah Data Dokter</li>
+								<li class="breadcrumb-item" aria-current="page"><a href="teknisi.php">teknisi</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Tambah teknisi</li>
 							</ol>
 						</div>
 					</div>
@@ -40,42 +36,42 @@ $g->TampilDataAdmin($_GET['id_admin']);
 					<div class="col-lg-8 col-xlg-9 col-md-7">
 						<div class="card">
 							<div class="card-body">
-								<form method="post" class="form-horizontal form-material" action="../ProsesA/e_dokter.php">
+								<form method="post" class="form-horizontal form-material" action="../ProsesA/t_teknisi.php">
 									<div class="form-group">
-										<input type="hidden" value="<?php print $_GET['id_admin'] ?>" name="id_admin" />
 										<label class="col-md-12">Nama</label>
 										<div class="col-md-12">
-											<input type="text" value="<?php print $g->nama; ?>" class="form-control form-control-line" name="nama" required="">
+											<input type="text" class="form-control form-control-line" name="nama" required="">
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-12">Username</label>
 										<div class="col-md-12">
-											<input type="text" value="<?php print $g->username; ?>" class="form-control form-control-line" name="username" required="">
+											<input type="text" class="form-control form-control-line" name="username" required="">
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-12">Password</label>
 										<div class="col-md-12">
-											<input type="text" value="<?php print $g->password; ?>" class="form-control form-control-line" name="password" required="">
+											<input type="text" class="form-control form-control-line" name="password" required="">
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-12">Email</label>
 										<div class="col-md-12">
-											<input type="email" value="<?php print $g->email; ?>" class="form-control form-control-line" name="email">
+											<input type="email" class="form-control form-control-line" name="email">
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-12">No HP</label>
 										<div class="col-md-12">
-											<input type="number" value="<?php print $g->nohp; ?>" class="form-control form-control-line" name="nohp">
+											<input type="number" class="form-control form-control-line" name="nohp">
 										</div>
 									</div>
-
+									
+									<input type="hidden" value="teknisi" name="tingkat">
 									<div class="form-group">
 										<div class="col-sm-12">
-											<button class="btn btn-success" type="submit">Ubah Data</button>
+											<button class="btn btn-success" type="submit">Tambah Data</button>
 										</div>
 									</div>
 								</form>

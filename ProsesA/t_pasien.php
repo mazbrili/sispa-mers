@@ -7,5 +7,5 @@ $tgl_lahir = $_POST['tgl_lahir'];
 
 $insert = new Pasien;
 $insert->Tambah($nama, $tgl_lahir, $id_admin);
-header('location: ../dokter/pasien.php')
+header('location: ../teknisi/pasien.php')
 ?>

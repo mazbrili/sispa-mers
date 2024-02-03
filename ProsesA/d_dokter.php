@@ -5,9 +5,9 @@ $hapus = new Admin;
 
 $id_admin = $_GET['id_admin'];
 if (!empty($id_admin)) {
-	$hapus->HapusDokter($id_admin);
-	header('location: ../admin/dokter.php');
+	$hapus->Hapusteknisi($id_admin);
+	header('location: ../admin/teknisi.php');
 } else {
-	header('location: ../admin/dokter.php');
+	header('location: ../admin/teknisi.php');
 }
 ?>

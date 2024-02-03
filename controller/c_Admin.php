@@ -18,10 +18,10 @@ class Admin
 		$this->nohp = $p->nohp;
 	}
 
-	function DokterSemua()
+	function teknisiSemua()
 	{
 		include '../koneksi/koneksi.php';
-		$query = mysqli_query($con, "SELECT * FROM admin where tingkat = 'dokter'");
+		$query = mysqli_query($con, "SELECT * FROM admin where tingkat = 'teknisi'");
 		$i = 0;
 		while($d = mysqli_fetch_array($query))
 		{
@@ -36,20 +36,20 @@ class Admin
 		return $data;
 	}
 
-	function TambahDokter($nama, $username, $password, $email, $nohp, $tingkat)
+	function Tambahteknisi($nama, $username, $password, $email, $nohp, $tingkat)
 	{
 		include "../koneksi/koneksi.php";
 		$query = mysqli_query($con, "INSERT INTO admin (nama, username, password, email, nohp, tingkat)
 			values('$nama', '$username', '$password', '$email', '$nohp', '$tingkat')");
 	}
 
-	function UbahDokter($id_admin, $nama, $username, $password, $email, $nohp)
+	function Ubahteknisi($id_admin, $nama, $username, $password, $email, $nohp)
 	{
 		include "../koneksi/koneksi.php";
 		$query = mysqli_query($con, "UPDATE admin set nama='$nama',username='$username',password='$password',email='$email',nohp='nohp' WHERE id_admin='$id_admin'");
 	}
 
-	function HapusDokter($id_admin)
+	function Hapusteknisi($id_admin)
 	{
 		include "../koneksi/koneksi.php";
 		$query = mysqli_query($con, "DELETE FROM admin WHERE id_admin = '$id_admin'");

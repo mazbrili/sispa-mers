@@ -1,14 +1,14 @@
 <?php 
 include '../controller/c_Admin.php';
-
+$id_admin = $_POST['id_admin'];
 $nama = $_POST['nama'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 $email = $_POST['email'];
 $nohp = $_POST['nohp'];
-$tingkat = $_POST['tingkat'];
 
-$insert = new Admin;
-$insert->TambahDokter($nama,$username,$password,$email,$nohp,$tingkat);
-header('location: ../admin/dokter.php')
+$update = new Admin;
+$update->Ubahteknisi($id_admin, $nama, $username, $password, $email, $nohp);
+
+header('location: ../admin/teknisi.php');
 ?>

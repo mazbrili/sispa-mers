@@ -24,12 +24,12 @@ if ($cek > 0) {
 	if ($data['tingkat']=="admin") {
 		$_SESSION['username'] = $username;
 		$_SESSION['tingkat'] = "admin";
-		header('location:admin/dokter.php'); //jika berhasil login, maka masuk ke file yang dituju
-	} elseif ($data['tingkat']=="dokter") {
+		header('location:admin/teknisi.php'); //jika berhasil login, maka masuk ke file yang dituju
+	} elseif ($data['tingkat']=="teknisi") {
 		$_SESSION['username'] = $username;
-		$_SESSION['tingkat'] = "dokter";
+		$_SESSION['tingkat'] = "teknisi";
 		$_SESSION['id_admin'] = $data['id_admin'];
-		header('location:dokter/pasien.php'); //jika berhasil login, maka masuk ke file yang dituju
+		header('location:teknisi/pasien.php'); //jika berhasil login, maka masuk ke file yang dituju
 	} else {
 		$_SESSION["error"] = $error;
 		header("location: login.php");

@@ -13,17 +13,17 @@ $p = new Admin;
     <div class="page-breadcrumb">
         <div class="row align-items-center">
             <div class="col-5">
-                <h4 class="page-title">Manajemen dokter</h4>
+                <h4 class="page-title">Manajemen teknisi</h4>
                 <div class="d-flex align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Dokter</li>
+                        <li class="breadcrumb-item active" aria-current="page">teknisi</li>
                     </ol>
                 </div>
             </div>
             <div class="col-7">
                 <div class="text-right upgrade-btn">
-                    <a href="tdokter.php" class="btn btn-danger text-white"><i class="mdi mdi-plus"></i> Tambah Dokter</a>
+                    <a href="tteknisi.php" class="btn btn-danger text-white"><i class="mdi mdi-plus"></i> Tambah teknisi</a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@ $p = new Admin;
                             </thead>
                             <tbody>
                                 <?php 
-                                $data = $p->DokterSemua();
+                                $data = $p->teknisiSemua();
                                 if (!isset($data)) {
                                     ?>
                                     <tr>
@@ -83,9 +83,9 @@ $p = new Admin;
                                         <td><?php print $d['email']; ?></td>
                                         <td><?php print $d['nohp']; ?></td>
                                         <td>
-                                            <a href="edokter.php?id_admin=<?php print $d['id_admin']; ?>" class="btn btn-info btn-simple btn-xs text-white" title="Edit Data Dokter"><i class="mdi mdi-lead-pencil"></i></a>
+                                            <a href="eteknisi.php?id_admin=<?php print $d['id_admin']; ?>" class="btn btn-info btn-simple btn-xs text-white" title="Edit Data teknisi"><i class="mdi mdi-lead-pencil"></i></a>
 
-                                            <a onclick="if (! confirm('Apakah anda yakin akan menghapus Dokter dari daftar ?')) { return false; }" href="../ProsesA/d_dokter.php?id_admin=<?php print $d['id_admin']; ?>" class="btn btn-danger btn-simple btn-xs text-white" title="Hapus Dokter"><i class="fa fa-times"></i></a>
+                                            <a onclick="if (! confirm('Apakah anda yakin akan menghapus teknisi dari daftar ?')) { return false; }" href="../ProsesA/d_teknisi.php?id_admin=<?php print $d['id_admin']; ?>" class="btn btn-danger btn-simple btn-xs text-white" title="Hapus teknisi"><i class="fa fa-times"></i></a>
                                         </td>
                                     </tr>
                                 <?php }} ?>

@@ -119,7 +119,7 @@ function googleTranslateElementInit() {
 								<span class="section-heading-lower">Hasil Diagnosa kerusakan</span>
 							</h2>
 							<p style="text-align: justify;">
-							<!-- <img src='assets/img/dokter.png' width='50%' style='float: right; margin-top: -30px;'> -->
+							<!-- <img src='assets/img/teknisi.png' width='50%' style='float: right; margin-top: -30px;'> -->
 								<?php
 								include "koneksi/koneksi.php";
 
@@ -216,12 +216,12 @@ function googleTranslateElementInit() {
 										if (round($densitas_baru[$codes[0]]*100,2) < 80) {
 											echo "Selamat anda tidak terdeteksi kerusakan <br><br>";
 											?> 
-											<img src='assets/img/dokter.png' width='50%' style='float: right; margin-top: -100px;'>
+											<img src='assets/img/teknisi.png' width='50%' style='float: right; margin-top: -100px;'>
 											<?php 
 										} else {
 											echo "Terdeteksi kerusakan <b style='color:red'>{$row[0]}</b> dengan derajat kepercayaan <b>".round($densitas_baru[$codes[0]]*100,2)."%</b> <br><br>";
 											?> 
-											<img src='assets/img/dokter2.png' width='50%' style='float: right; margin-top: -50px;'>
+											<img src='assets/img/teknisi2.png' width='50%' style='float: right; margin-top: -50px;'>
 											<?php
 										}
 										

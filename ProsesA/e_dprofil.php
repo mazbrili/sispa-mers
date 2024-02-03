@@ -33,9 +33,9 @@ $sql = "UPDATE admin SET nama = '$nama', password = '$password', email = '$email
 if($nama != "" && $password != "" && $email != "" && $nohp != ""){
 	mysqli_query($con, $sql);
 	$_SESSION["sukses"] = $sukses;
-	header('location:../dokter/profil.php');
+	header('location:../teknisi/profil.php');
 } else {
 	$_SESSION["gagal"] = $gagal;
-	header('location:../dokter/profil.php');
+	header('location:../teknisi/profil.php');
 }
 ?>
