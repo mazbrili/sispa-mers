@@ -17,10 +17,10 @@ $pt = new Gejala;
   <meta name="author" content="">
   <link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
-  <title>Sispa - Sistem Pakar Diagnosa kerusakan MERS-CoV</title>
+  <title>Sisdik-PC - Sistem Pakar Diagnosa kerusakan PC</title>
 
   <!-- SEO -->
-  <meta name="keywords" content="Sispa, Sistem Pakar, Sistem Pakar Diagnosa MERS-CoV, MERS-CoV, Diagnos MERS-CoV, Fandy TIC, Fandy Hidayat, Diagnosa kerusakan, Apa itu Mers-Cov?,Middle East Respiratory Syndrome Corona Virus, Corona Virus">
+  <meta name="keywords" content="Sisdik-PC, Sistem Pakar, Sistem Pakar Diagnosa PC, PC, Diagnos PC,  Buntas Nugrohadi, Diagnosa kerusakan, Apa itu PC ?">
 
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -182,7 +182,7 @@ $pt = new Gejala;
               
               <form method="post" action="testph.php">
 
-                <h2>Silahkan pilih apa yang anda rasakan</h2><hr>
+                <h2>Silahkan pilih tanda kerusakan yang dilihat/didengar</h2><hr>
                 <?php
                 $data = $pt->TampilSemuaWeb();
                 foreach($data as $d){ ?>
@@ -206,7 +206,7 @@ $pt = new Gejala;
 
 <footer class="footer text-faded text-center py-5">
   <div class="container">
-    <p style="color: white;">Jumlah riwayat diagnosa saat ini : <?php echo $cl->jum; ?> | Copyright &copy; <a href="login.php">Sispa</a> 2018</p>
+    <p style="color: white;">Jumlah riwayat diagnosa saat ini : <?php echo $cl->jum; ?> | Copyright &copy; <a href="login.php">Sisdik-PC</a> 2018</p>
   </div>
 </footer>
 

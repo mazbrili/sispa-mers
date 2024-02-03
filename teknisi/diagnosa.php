@@ -118,7 +118,7 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                             <form method="post" action="hdiagnosa.php">
                                 <input type="hidden" name="id_pasien" value="<?php print $_GET['id_pasien'] ?>">
                                 
-                                <h2>Silahkan pilih apa yang anda rasakan</h2><hr>
+                                <h2>Silahkan pilih apa yang anda lihat/dengar</h2><hr>
                                 <?php
                                 $data = $pt->TampilSemua();
                                 foreach($data as $d){ ?>

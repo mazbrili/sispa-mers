@@ -10,11 +10,11 @@ $cl->Count();
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Author: Fandy Hidayat, About: Mers-Cov, Category: Expert System">
-  <meta name="author" content="Fandy Hidayat, Fandy TIC">
+  <meta name="description" content="Author: Buntas Nugrohadi, About: sisdik-pc, Category: Expert System">
+  <meta name="author" content="Buntas Nugrohadi">
   <link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
-  <title>Sispa - Sistem Pakar Diagnosa Kerusakan PC</title>
+  <title>Sisdik-PC - Sistem Pakar Diagnosa Kerusakan PC</title>
 
   <!-- SEO -->
   <meta name="keywords" content="gapake seo">
@@ -71,7 +71,7 @@ $cl->Count();
   <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" id="clock" style="color: white"></a></button>
 
   <h1 class="site-heading text-center d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan MERS-CoV</span>
+    <span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan PC</span>
     <span class="site-heading-lower">Sistem Pakar</span>
   </h1>
 
@@ -116,18 +116,18 @@ $cl->Count();
                 <!-- <span class="section-heading-upper">Strong Coffee, Strong Roots</span> -->
                 <span class="section-heading-lower">Panduan Tata Cara Diagnosa Masalah PC</span>
               </h2>
-              <p style="text-align: justify;">Sistem Pakar diagnosa masalah PC merupakan sebuah sistem yang mampu melakukan diagnosa Pc berdasarkan masukan :</p>
+              <p style="text-align: justify;">Sistem Pakar diagnosa masalah PC merupakan sebuah sistem yang mampu melakukan diagnosa Pc berdasarkan masukan pengguna:</p>
 
               <h3><span class="section-heading-upper">BAGAIMANA CARA MELAKUKAN DIAGNOSA KERUSAKAN PC?</span></h3>
               <p class="mb-0">Diagnosa kerusakan dapat dilakukan apabila telah menginput 2 gejala atau lebih, dikarenakan untuk mendiagnosa sebuah kerusakan dibutuhkan minimal 2 buah gejala agar  dapat didiagnosa.</p>
 
               <br>
-              <h3><span class="section-heading-upper">BAGAIMANA JIKA GEJALA YANG ANDA RASAKAN TIDAK TERDAPAT DI SISTEM?</span></h3>
+              <h3><span class="section-heading-upper">BAGAIMANA JIKA GEJALA YANG ANDA  LIHAT/DENGAR TIDAK TERDAPAT DI SISTEM?</span></h3>
               <p class="mb-0">Pada saat ini hanya beberapa gejala dan tingkatan kerusakan yang dapat didiagnosa oleh sistem, maka dari itu proses diagnosa kerusakan hanya bisa dilakukan jika gejala dan kerusakan sudah terdaftar pada sistem.</p>
 
               <br>
               <h3><span class="section-heading-upper">APAKAH DIAGNOSA kerusakan PADA SISTEM SUDAH 100% BENAR?</span></h3>
-              <p class="mb-0">Diagnosa kerusakan pada sistem dilakukan dengan perhitungan yang menggunakan metode <i>Dempster-Shafer</i> dengan nilai kepercayaan bersumber dari pakar/teknisi ahli paru-paru, guna melakukan upaya penanganan dini terhadap kerusakan tersebut. tetapi akan lebih baik jika melakukan konsultasi ulang bersama teknisi ahli paru-paru, agar masalah yang anda hadapi dapat ditangani lebih baik.</p>
+              <p class="mb-0">Diagnosa kerusakan pada sistem dilakukan dengan perhitungan yang menggunakan metode <i>Dempster-Shafer</i> dengan nilai kepercayaan bersumber dari pakar/teknisi komputer, guna melakukan identifikasi dini masalah komputer , hanya saja dengan berkonsultasi langsung dengan ahlinya masalah yang anda hadapi dapat ditangani lebih baik.</p>
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@ $cl->Count();
 
   <footer class="footer text-faded text-center py-5">
     <div class="container">
-      <p style="color: white;">Jumlah riwayat diagnosa saat ini : <?php echo $cl->jum; ?> | Copyright &copy; Sispa 2018</p>
+      <p style="color: white;">Jumlah riwayat diagnosa saat ini : <?php echo $cl->jum; ?> | Copyright &copy; Sisdik-PC 2024</p>
     </div>
   </footer>
 

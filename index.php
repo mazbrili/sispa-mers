@@ -10,14 +10,14 @@ $cl->Count();
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Author: Fandy Hidayat, About: Mers-Cov, Category: Expert System">
-  <meta name="author" content="Fandy Hidayat, Fandy TIC">
+  <meta name="description" content="Author: Buntas Nugrohadi, About: Diag PC, Category: Expert System">
+  <meta name="author" content="Buntas Nugrohadi, Fandy TIC">
   <link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
-  <title>Sispa - Sistem Pakar Diagnosa kerusakan MERS-CoV</title>
+  <title>Sisdik-PC - Sistem Pakar Diagnosa kerusakan  PC</title>
 
   <!-- SEO -->
-  <meta name="keywords" content="Sispa, Sistem Pakar, Sistem Pakar Diagnosa MERS-CoV, MERS-CoV, Diagnos MERS-CoV, Fandy TIC, Fandy Hidayat, Diagnosa kerusakan, Apa itu Mers-Cov?,Middle East Respiratory Syndrome Corona Virus, Corona Virus">
+  <meta name="keywords" content="Sisdik-PC, Sistem Pakar, Sistem Pakar Diagnosa  PC, Diag PC, Diagnos Diag PC,  Buntas Nugrohadi, Diagnosa kerusakan, Apa itu Diag PC?">
 
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -70,7 +70,7 @@ function googleTranslateElementInit() {
   <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" id="clock" style="color: white" rel="noopener"></a></button>
 
   <h1 class="site-heading text-center d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Diagnosa dengan DiagPro-PC</span>
+    <span class="site-heading-upper text-primary mb-3">Diagnosa dengan Sisdik-PC</span>
     <span class="site-heading-lower">Sistem Pakar</span>
   </h1>
 
@@ -112,9 +112,9 @@ function googleTranslateElementInit() {
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4">
             <span class="section-heading-upper">Apa itu</span>
-            <span class="section-heading-lower">DiagPro-PC?</span>
+            <span class="section-heading-lower">Sisdik-PC?</span>
           </h2>
-          <p class="mb-3" >DiagPro-PC adalah Aplikas web untuk mendiagnosa masalah pada pc anda berdasarkan dari masukkan anda sehingga dari itu bisa disimpulan masalah ada dimana?
+          <p class="mb-3" >Sisdik-PC adalah Aplikas web untuk mendiagnosa masalah pada pc anda berdasarkan dari masukkan anda sehingga dari itu bisa disimpulan masalah ada dimana?
           </p>
           <div class="intro-button mx-auto">
             <h2><a class="btn btn-primary btn-xl" href="diagnosa.php" rel="noopener">DIAGNOSA SEKARANG</a></h2>
@@ -131,9 +131,9 @@ function googleTranslateElementInit() {
           <div class="cta-inner text-center rounded">
             <h2 class="section-heading mb-4">
               <span class="section-heading-upper">Tentang</span>
-              <span class="section-heading-lower">DiagPro-PC</span>
+              <span class="section-heading-lower">Sisdik-PC</span>
             </h2>
-            <p class="mb-0" style="text-align: justify;">MERS CoV adalah singkatan dari Middle East Respiratory Syndrome Corona Virus. Keberadaan virus ini pertama kali dilaporkan pada bulan September 2012 di Arab Saudi. Virus ini merupakan jenis baru dari kelompok Corona virus (Novel Corona Virus) namun  berbeda dengan  virus Severe Acute Respiratory Syndrome (SARS) pada tahun 2003. Gejala apabila terserang Virus Mers CoV adalah demam, batuk dan sesak nafas, bersifat akut, biasanya pasien memiliki kerusakan ko-morbid/penyerta dan memiliki inkubasi 2-14 hari.</p><br>
+            <p class="mb-0" style="text-align: justify;"> Sisdik-PC adalah Sistem diagnosa kerusakan PC yang dikembangkan untuk mendiagnosa kerusakan PC dari masalah yang dilaporkan pengguna, sehingga bisa dilakukan pre-diagnostic untuk dugaan awal masalah pc  </p><br>
           </div>
         </div>
       </div>
@@ -154,7 +154,7 @@ function googleTranslateElementInit() {
 
   <footer class="footer text-faded text-center py-5">
     <div class="container">
-      <p style="color: white;">Jumlah riwayat diagnosa saat ini : <?php echo $cl->jum; ?> | Copyright &copy; Sispa 2018</p>
+      <p style="color: white;">Jumlah riwayat diagnosa saat ini : <?php echo $cl->jum; ?> | Copyright &copy; Sisdik-PC 2018</p>
     </div>
   </footer>
 

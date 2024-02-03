@@ -17,7 +17,7 @@ $dg = new Diagnosa;
 	<meta name="author" content="">
 	<link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
-	<title>Sispa - Sistem Pakar Diagnosa Kerusakan PC</title>
+	<title>Sisdik-PC - Sistem Pakar Diagnosa Kerusakan PC</title>
 
 	<!-- SEO -->
   <meta name="keywords" content="embuhlah">
@@ -74,7 +74,7 @@ function googleTranslateElementInit() {
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" id="clock" style="color: white"></a></button>
 
 	<h1 class="site-heading text-center d-none d-lg-block">
-		<span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan MERS-CoV</span>
+		<span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan PC</span>
 		<span class="site-heading-lower">Sistem Pakar</span>
 	</h1>
 
@@ -179,7 +179,7 @@ function googleTranslateElementInit() {
 
 	<footer class="footer text-faded text-center py-5">
 		<div class="container">
-			<p style="color: white;">Jumlah riwayat diagnosa saat ini : <?php echo $cl->jum; ?> | Copyright &copy; <a href="login.php">Sispa</a> 2018</p>
+			<p style="color: white;">Jumlah riwayat diagnosa saat ini : <?php echo $cl->jum; ?> | Copyright &copy; <a href="login.php">Sisdik-PC</a> 2018</p>
 		</div>
 	</footer>
 

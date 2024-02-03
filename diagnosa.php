@@ -13,14 +13,14 @@ $pt = new Gejala;
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Author: Fandy Hidayat, About: Mers-Cov, Category: Expert System">
-  <meta name="author" content="Fandy Hidayat, Fandy TIC">
+  <meta name="description" content="Author: Buntas Nugrohadi, About: PC, Category: Expert System">
+  <meta name="author" content="Buntas Nugrohadi, Fandy TIC">
   <link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
-  <title>Sispa - Sistem Pakar Diagnosa kerusakan MERS-CoV</title>
+  <title>Sisdik-PC - Sistem Pakar Diagnosa kerusakan PC</title>
 
   <!-- SEO -->
-  <meta name="keywords" content="Sispa, Sistem Pakar, Sistem Pakar Diagnosa MERS-CoV, MERS-CoV, Diagnos MERS-CoV, Fandy TIC, Fandy Hidayat, Diagnosa kerusakan, Apa itu Mers-Cov?,Middle East Respiratory Syndrome Corona Virus, Corona Virus">
+  <meta name="keywords" content="Sisdik-PC, Sistem Pakar, Sistem Pakar Diagnosa PC, PC, Diagnos PC,  Buntas Nugrohadi, Diagnosa kerusakan, Apa itu PC?">
 
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -136,7 +136,7 @@ $pt = new Gejala;
   <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" id="clock" style="color: white"></a></button>
 
   <h1 class="site-heading text-center d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan MERS-CoV</span>
+    <span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan PC</span>
     <span class="site-heading-lower">Sistem Pakar</span>
   </h1>
 
@@ -179,7 +179,7 @@ $pt = new Gejala;
               
               <form method="post" action="hasil.php">
 
-                <h2>Silahkan pilih apa yang anda rasakan</h2><hr>
+                <h2>Silahkan pilih apa yang lihat/dengar</h2><hr>
                 <?php
                 $data = $pt->TampilSemuaWeb();
                 foreach($data as $d){ ?>
@@ -203,7 +203,7 @@ $pt = new Gejala;
 
 <footer class="footer text-faded text-center py-5">
   <div class="container">
-    <p style="color: white;">Jumlah riwayat diagnosa saat ini : <?php echo $cl->jum; ?> | Copyright &copy; Sispa 2018</p>
+    <p style="color: white;">Jumlah riwayat diagnosa saat ini : <?php echo $cl->jum; ?> | Copyright &copy; Sisdik-PC 2018</p>
   </div>
 </footer>
 
