@@ -10,14 +10,14 @@ $cl->Count();
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Author: Buntas Nugrohadi, About: Diag PC, Category: Expert System">
+  <meta name="description" content="Author: Buntas Nugrohadi, About: sisdik-pc, Category: Expert System">
   <meta name="author" content="Buntas Nugrohadi, Fandy TIC">
   <link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
   <title>Sisdik-PC - Sistem Pakar Diagnosa kerusakan  PC</title>
 
   <!-- SEO -->
-  <meta name="keywords" content="Sisdik-PC, Sistem Pakar, Sistem Pakar Diagnosa  PC, Diag PC, Diagnos Diag PC,  Buntas Nugrohadi, Diagnosa kerusakan, Apa itu Diag PC?">
+  <meta name="keywords" content="Sisdik-PC, Sistem Pakar, Sistem Pakar Diagnosa  PC, sisdik-pc, Diagnos sisdik-pc,  Buntas Nugrohadi, Diagnosa kerusakan, Apa itu sisdik-pc?">
 
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

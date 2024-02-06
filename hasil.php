@@ -13,14 +13,14 @@ $dg = new Diagnosa;
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Author: Buntas Nugrohadi, About: Diag PC, Category: Expert System">
+	<meta name="description" content="Author: Buntas Nugrohadi, About: sisdik-pc, Category: Expert System">
   	<meta name="author" content="Buntas Nugrohadi, Fandy TIC">
 	<link rel="icon" type="image/png" sizes="16x16" href="assetsA/assets/images/Logo-SP.png">
 
 	<title>Sisdik-PC - Sistem Pakar Diagnosa kerusakan  PC</title>
 
 	<!-- SEO -->
-  <meta name="keywords" content="Sisdik-PC, Sistem Pakar, Sistem Pakar Diagnosa Diag PC, Diag PC, Diagnos Diag PC,  Buntas Nugrohadi, Diagnosa kerusakan, Apa itu Diag PC?,Middle East Respiratory Syndrome Corona Virus">
+  <meta name="keywords" content="Sisdik-PC, Sistem Pakar, Sistem Pakar Diagnosa sisdik-pc, sisdik-pc, Diagnos sisdik-pc,  Buntas Nugrohadi, Diagnosa kerusakan, Apa itu sisdik-pc?,Middle East Respiratory Syndrome Corona Virus">
 
 	<!-- Bootstrap core CSS -->
 	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -74,7 +74,7 @@ function googleTranslateElementInit() {
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" id="clock" style="color: white"></a></button>
 
 	<h1 class="site-heading text-center d-none d-lg-block">
-		<span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan Diag PC</span>
+		<span class="site-heading-upper text-primary mb-3">Diagnosa kerusakan sisdik-pc</span>
 		<span class="site-heading-lower">Sistem Pakar</span>
 	</h1>
 
