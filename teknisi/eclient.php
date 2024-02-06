@@ -43,15 +43,15 @@ $p->TampilSatuData($_GET['id_client']);
 								<form method="post" class="form-horizontal form-material" action="../ProsesA/e_client.php">
 									<div class="form-group">
 										<input type="hidden" value="<?php print $_GET['id_client'] ?>" name="id_client" />
-										<label class="col-md-12">Nama client</label>
+										<label class="col-md-12">Nama client-merktype-serial</label>
 										<div class="col-md-12">
 											<input type="text" value="<?php print $p->nama; ?>" class="form-control form-control-line" name="nama" required>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-12">Tanggal Lahir</label>
+										<label class="col-md-12">Tanggal Manufaktur</label>
 										<div class="col-md-12">
-											<input type="date" class="form-control form-control-line" value="<?php print $p->tgl_lahir; ?>" name="tgl_lahir" required>
+											<input type="date" class="form-control form-control-line" value="<?php print $p->tgl_prod; ?>" name="tgl_prod" required>
 											<!-- <p style="color: red">*Format Bulan/Tanggal/Tahun</p> -->
 										</div>
 									</div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 05, 2024 at 10:51 AM
+-- Generation Time: Feb 06, 2024 at 10:52 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -48,6 +48,26 @@ INSERT INTO `admin` (`id_admin`, `nama`, `username`, `password`, `email`, `nohp`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `client`
+--
+
+CREATE TABLE `client` (
+  `id_client` int(11) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `tgl_prod` varchar(50) NOT NULL,
+  `id_admin` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `client`
+--
+
+INSERT INTO `client` (`id_client`, `nama`, `tgl_prod`, `id_admin`) VALUES
+(19, 'mas jokp', '2024-02-05', 7);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `diagnosa`
 --
 
@@ -55,7 +75,7 @@ CREATE TABLE `diagnosa` (
   `id_diagnosa` int(11) NOT NULL,
   `tanggal` varchar(50) NOT NULL,
   `gejala` text NOT NULL,
-  `penyakit` varchar(250) NOT NULL,
+  `kerusakan` varchar(250) NOT NULL,
   `nilai` varchar(50) NOT NULL,
   `persentase` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
@@ -153,26 +173,6 @@ INSERT INTO `ds_kerusakan` (`id`, `kode`, `nama`, `kett`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `client`
---
-
-CREATE TABLE `client` (
-  `id_client` int(11) NOT NULL,
-  `nama` varchar(100) NOT NULL,
-  `tgl_lahir` varchar(50) NOT NULL,
-  `id_admin` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Dumping data for table `client`
---
-
-INSERT INTO `client` (`id_client`, `nama`, `tgl_lahir`, `id_admin`) VALUES
-(19, 'mas jokp', '2024-02-05', 7);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `riwayat`
 --
 
@@ -181,10 +181,18 @@ CREATE TABLE `riwayat` (
   `id_client` int(11) NOT NULL,
   `tanggal` varchar(50) NOT NULL,
   `gejala` text NOT NULL,
-  `penyakit` varchar(200) NOT NULL,
+  `kerusakan` varchar(200) NOT NULL,
   `nilai` varchar(20) NOT NULL,
   `persentase` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `riwayat`
+--
+
+INSERT INTO `riwayat` (`id_riwayat`, `id_client`, `tanggal`, `gejala`, `kerusakan`, `nilai`, `persentase`) VALUES
+(1, 19, '06-02-2024<br>03:43:24 AM', '1. Komputer tidak bisa menyala<br>2. Komputer restart sendiri<br>', 'Power supply rusak', '0.9', '90%'),
+(2, 19, '06-02-2024<br>04:01:57 AM', '1. Komputer tidak bisa menyala<br>2. Komputer sering mati sendiri<br>', 'Power supply rusak', '0.98', '98%');
 
 --
 -- Indexes for dumped tables
@@ -195,6 +203,13 @@ CREATE TABLE `riwayat` (
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id_admin`);
+
+--
+-- Indexes for table `client`
+--
+ALTER TABLE `client`
+  ADD PRIMARY KEY (`id_client`),
+  ADD KEY `id_admin` (`id_admin`);
 
 --
 -- Indexes for table `diagnosa`
@@ -223,18 +238,11 @@ ALTER TABLE `ds_kerusakan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `client`
---
-ALTER TABLE `client`
-  ADD PRIMARY KEY (`id_client`),
-  ADD KEY `id_admin` (`id_admin`);
-
---
 -- Indexes for table `riwayat`
 --
 ALTER TABLE `riwayat`
   ADD PRIMARY KEY (`id_riwayat`),
-  ADD KEY `id_client` (`id_client`);
+  ADD KEY `id_pasien` (`id_client`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -245,6 +253,12 @@ ALTER TABLE `riwayat`
 --
 ALTER TABLE `admin`
   MODIFY `id_admin` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `client`
+--
+ALTER TABLE `client`
+  MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `diagnosa`
@@ -271,20 +285,20 @@ ALTER TABLE `ds_kerusakan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `client`
---
-ALTER TABLE `client`
-  MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
-
---
 -- AUTO_INCREMENT for table `riwayat`
 --
 ALTER TABLE `riwayat`
-  MODIFY `id_riwayat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_riwayat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `client`
+--
+ALTER TABLE `client`
+  ADD CONSTRAINT `client_ibfk_1` FOREIGN KEY (`id_admin`) REFERENCES `admin` (`id_admin`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `ds_aturan`
@@ -292,12 +306,6 @@ ALTER TABLE `riwayat`
 ALTER TABLE `ds_aturan`
   ADD CONSTRAINT `ds_aturan_ibfk_1` FOREIGN KEY (`id_kerusakan`) REFERENCES `ds_kerusakan` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `ds_aturan_ibfk_2` FOREIGN KEY (`id_gejala`) REFERENCES `ds_gejala` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `client`
---
-ALTER TABLE `client`
-  ADD CONSTRAINT `client_ibfk_1` FOREIGN KEY (`id_admin`) REFERENCES `admin` (`id_admin`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `riwayat`

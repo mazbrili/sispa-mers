@@ -47,8 +47,8 @@ $p = new client;
                                 <thead style="background-color: #7f8c8d; color: white;">
                                   <tr>
                                     <th style="color: white;" width="5%">ID</th>
-                                    <th style="color: white;">Nama client</th>
-                                    <th style="color: white;">Tanggal Lahir</th>
+                                    <th style="color: white;">Nama client-merktype-serial</th>
+                                    <th style="color: white;">Tanggal Manufaktur</th>
                                     <th style="color: white;">Aksi</th>
                                 </tr>
                             </thead>
@@ -72,7 +72,7 @@ $p = new client;
                                     <tr>
                                         <td><?php print $i; ?></td>
                                         <td><?php print $d['nama']; ?></td>
-                                        <td><?php print $d['tgl_lahir']; ?></td>
+                                        <td><?php print $d['tgl_prod']; ?></td>
                                         <td>
                                             <a href="riwayatrm.php?id_client=<?php print $d['id_client']; ?>" class="btn btn-info btn-simple btn-xs text-white" title="Lihat Diagnosa client"><i class="mdi mdi-eye"></i></a>
 

@@ -14,12 +14,12 @@ $data = $p->TampilRclient($_GET['id_client']);
     <div class="page-breadcrumb">
         <div class="row align-items-center">
             <div class="col-5">
-                <h4 class="page-title">Manajemen Rekam Medis</h4>
+                <h4 class="page-title">Manajemen Rekam Data</h4>
                 <div class="d-flex align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item"><a href="client.php">client</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Rekam Medis</li>
+                        <li class="breadcrumb-item active" aria-current="page">Rekam Data</li>
                     </ol>
                 </div>
             </div>
@@ -85,7 +85,7 @@ $data = $p->TampilRclient($_GET['id_client']);
                                             <td><?php print $r['persentase']; ?></td>
                                             <td>
                                                 
-                                                <a onclick="if (! confirm('Apakah anda yakin akan menghapus riwayat rekam medis dari daftar ?')) { return false; }" href="../ProsesA/d_rekam.php?id_riwayat=<?php print $r['id_riwayat']; ?>&id_client=<?php print $_GET['id_client']; ?>" class="btn btn-danger btn-simple btn-xs text-white" title="Hapus Rekam Medis"><i class="fa fa-times"></i></a>
+                                                <a onclick="if (! confirm('Apakah anda yakin akan menghapus riwayat Rekam Data dari daftar ?')) { return false; }" href="../ProsesA/d_rekam.php?id_riwayat=<?php print $r['id_riwayat']; ?>&id_client=<?php print $_GET['id_client']; ?>" class="btn btn-danger btn-simple btn-xs text-white" title="Hapus Rekam Data"><i class="fa fa-times"></i></a>
                                             </td>
                                         </tr>
                                     <?php }} ?>

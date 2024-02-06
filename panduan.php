@@ -98,6 +98,9 @@ $cl->Count();
           <li class="nav-item active px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="panduan.php">Panduan</a>
           </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="login.php">Login</a>
+          </li>
         </ul>
       </div>
       <div id="google_translate_element"></div>
