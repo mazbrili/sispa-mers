@@ -8,7 +8,7 @@ if(!isset($_SESSION['username'])){
 	if ($_SESSION["tingkat"] == "teknisi") {
 		$username = $_SESSION["username"];
 		$id_admin = $_SESSION['id_admin'];
-		header('location:teknisi/pasien.php');
+		header('location:teknisi/client.php');
 	}
 	if ($_SESSION['tingkat'] == "admin") {
 		$username = $_SESSION["username"];

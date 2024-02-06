@@ -4,7 +4,6 @@
  */
 class Riwayat
 {
-	
 	function TampilSemua()
 	{
 		include "../koneksi/koneksi.php";

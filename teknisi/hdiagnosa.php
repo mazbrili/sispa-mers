@@ -5,7 +5,7 @@ $pt = new Gejala;
 
 include "../controller/c_Rekam.php";
 $p = new Rekam;
-$data = $p->TampilRPasien($_GET['id_pasien']);
+$data = $p->TampilRclient($_GET['id_client']);
 ?>
 <style>
 /* The container */
@@ -88,7 +88,7 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                 <div class="d-flex align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="pasien.php">Pasien</a></li>
+                        <li class="breadcrumb-item"><a href="client.php">client</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Diagnosa</li>
                     </ol>
                 </div>
@@ -121,7 +121,7 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                                         ?>
                                         <script language="JavaScript">
                                             alert('Pilih minimal 2 gejala');
-                                        document.location='diagnosa.php?id_pasien=<?php print $_POST['id_pasien'] ?>'</script>
+                                        document.location='diagnosa.php?id_client=<?php print $_POST['id_client'] ?>'</script>
                                         <?php
                                         /*echo "Pilih minimal 2 gejala";*/
                                     }else{
@@ -234,24 +234,24 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                                         $persentase = round($densitas_baru[$codes[0]]*100,2)."%";
                                         //-- insert tanggal sekarang
                                         $tanggal = date("d-m-Y")."<br>".date("h:i:s A");
-                                        //-- id pasien
-                                        $id_pasien = $_POST['id_pasien'];
+                                        //-- id client
+                                        $id_client = $_POST['id_client'];
 
                                         //--- memasukkan hasil diagnosa ke database
-                                        $input = mysqli_query($con,"INSERT INTO riwayat (id_pasien, tanggal, gejala, kerusakan, nilai, persentase) values('$id_pasien', '$tanggal', '$gejala', '$kerusakan', '$nilai', '$persentase')");
+                                        $input = mysqli_query($con,"INSERT INTO riwayat (id_client, tanggal, gejala, kerusakan, nilai, persentase) values('$id_client', '$tanggal', '$gejala', '$kerusakan', '$nilai', '$persentase')");
                                     }
                                 } else {
                                     ?>
                                         <script language="JavaScript">
                                             alert('Silahkan Pilih gejala yang dirasakan');
-                                        document.location='diagnosa.php?id_pasien=<?php print $_POST['id_pasien'] ?>'</script>
+                                        document.location='diagnosa.php?id_client=<?php print $_POST['id_client'] ?>'</script>
                                         <?php
                                 } 
                                 ?>
                                 <br>
                                 <hr>
                                 <br>
-                                <a href="riwayatrm.php?id_pasien=<?php print $_POST['id_pasien']; ?>" class="btn btn-danger text-white">Kembali</a>
+                                <a href="riwayatrm.php?id_client=<?php print $_POST['id_client']; ?>" class="btn btn-danger text-white">Kembali</a>
                     </div>
                 </div>
             </div>

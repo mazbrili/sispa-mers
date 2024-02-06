@@ -1,6 +1,9 @@
 <?php include '_header.php';
 
-?>		
+include "../controller/c_client.php";
+$p = new client;
+$p->TampilSatuData($_GET['id_client']);
+?>
 		<!-- ============================================================== -->
 		<!-- Page wrapper  -->
 		<!-- ============================================================== -->
@@ -11,12 +14,12 @@
 			<div class="page-breadcrumb">
 				<div class="row align-items-center">
 					<div class="col-5">
-						<h4 class="page-title">Manajemen Tambah Data Pasien</h4>
+						<h4 class="page-title">Manajemen Ubah Data User PC</h4>
 						<div class="d-flex align-items-center">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#">Home</a></li>
-								<li class="breadcrumb-item" aria-current="page"><a href="pasien.php">Pasien</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Tambah Data Pasien</li>
+								<li class="breadcrumb-item" aria-current="page"><a href="client.php">client</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Ubah Data client</li>
 							</ol>
 						</div>
 					</div>
@@ -37,25 +40,25 @@
 					<div class="col-lg-8 col-xlg-9 col-md-7">
 						<div class="card">
 							<div class="card-body">
-								<form method="post" class="form-horizontal form-material" action="../ProsesA/t_pasien.php">
-									<input type="hidden" value="<?php echo $_SESSION["id_admin"] ?>" name="id_admin">
+								<form method="post" class="form-horizontal form-material" action="../ProsesA/e_client.php">
 									<div class="form-group">
-										<label class="col-md-12">Nama Pasien</label>
+										<input type="hidden" value="<?php print $_GET['id_client'] ?>" name="id_client" />
+										<label class="col-md-12">Nama client</label>
 										<div class="col-md-12">
-											<input type="text" class="form-control form-control-line" name="nama" required="">
+											<input type="text" value="<?php print $p->nama; ?>" class="form-control form-control-line" name="nama" required>
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-12">Tanggal Lahir</label>
 										<div class="col-md-12">
-											<input type="date" class="form-control form-control-line"  name="tgl_lahir" required="">
+											<input type="date" class="form-control form-control-line" value="<?php print $p->tgl_lahir; ?>" name="tgl_lahir" required>
 											<!-- <p style="color: red">*Format Bulan/Tanggal/Tahun</p> -->
 										</div>
 									</div>
 
 									<div class="form-group">
 										<div class="col-sm-12">
-											<button class="btn btn-success" type="submit">Tambah Data</button>
+											<button class="btn btn-success" type="submit">Ubah Data</button>
 										</div>
 									</div>
 								</form>

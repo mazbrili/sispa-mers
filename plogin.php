@@ -29,7 +29,7 @@ if ($cek > 0) {
 		$_SESSION['username'] = $username;
 		$_SESSION['tingkat'] = "teknisi";
 		$_SESSION['id_admin'] = $data['id_admin'];
-		header('location:teknisi/pasien.php'); //jika berhasil login, maka masuk ke file yang dituju
+		header('location:teknisi/client.php'); //jika berhasil login, maka masuk ke file yang dituju
 	} else {
 		$_SESSION["error"] = $error;
 		header("location: login.php");

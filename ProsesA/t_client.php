@@ -1,11 +1,11 @@
 <?php 
-include '../controller/c_Pasien.php';
+include '../controller/c_client.php';
 
 $id_admin = $_POST['id_admin'];
 $nama = $_POST['nama'];
 $tgl_lahir = $_POST['tgl_lahir'];
 
-$insert = new Pasien;
+$insert = new client;
 $insert->Tambah($nama, $tgl_lahir, $id_admin);
-header('location: ../teknisi/pasien.php')
+header('location: ../teknisi/client.php')
 ?>

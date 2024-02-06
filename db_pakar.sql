@@ -153,21 +153,21 @@ INSERT INTO `ds_kerusakan` (`id`, `kode`, `nama`, `kett`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pasien`
+-- Table structure for table `client`
 --
 
-CREATE TABLE `pasien` (
-  `id_pasien` int(11) NOT NULL,
+CREATE TABLE `client` (
+  `id_client` int(11) NOT NULL,
   `nama` varchar(100) NOT NULL,
   `tgl_lahir` varchar(50) NOT NULL,
   `id_admin` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `pasien`
+-- Dumping data for table `client`
 --
 
-INSERT INTO `pasien` (`id_pasien`, `nama`, `tgl_lahir`, `id_admin`) VALUES
+INSERT INTO `client` (`id_client`, `nama`, `tgl_lahir`, `id_admin`) VALUES
 (19, 'mas jokp', '2024-02-05', 7);
 
 -- --------------------------------------------------------
@@ -178,7 +178,7 @@ INSERT INTO `pasien` (`id_pasien`, `nama`, `tgl_lahir`, `id_admin`) VALUES
 
 CREATE TABLE `riwayat` (
   `id_riwayat` int(11) NOT NULL,
-  `id_pasien` int(11) NOT NULL,
+  `id_client` int(11) NOT NULL,
   `tanggal` varchar(50) NOT NULL,
   `gejala` text NOT NULL,
   `penyakit` varchar(200) NOT NULL,
@@ -223,10 +223,10 @@ ALTER TABLE `ds_kerusakan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `pasien`
+-- Indexes for table `client`
 --
-ALTER TABLE `pasien`
-  ADD PRIMARY KEY (`id_pasien`),
+ALTER TABLE `client`
+  ADD PRIMARY KEY (`id_client`),
   ADD KEY `id_admin` (`id_admin`);
 
 --
@@ -234,7 +234,7 @@ ALTER TABLE `pasien`
 --
 ALTER TABLE `riwayat`
   ADD PRIMARY KEY (`id_riwayat`),
-  ADD KEY `id_pasien` (`id_pasien`);
+  ADD KEY `id_client` (`id_client`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -271,10 +271,10 @@ ALTER TABLE `ds_kerusakan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `pasien`
+-- AUTO_INCREMENT for table `client`
 --
-ALTER TABLE `pasien`
-  MODIFY `id_pasien` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+ALTER TABLE `client`
+  MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `riwayat`
@@ -294,16 +294,16 @@ ALTER TABLE `ds_aturan`
   ADD CONSTRAINT `ds_aturan_ibfk_2` FOREIGN KEY (`id_gejala`) REFERENCES `ds_gejala` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `pasien`
+-- Constraints for table `client`
 --
-ALTER TABLE `pasien`
-  ADD CONSTRAINT `pasien_ibfk_1` FOREIGN KEY (`id_admin`) REFERENCES `admin` (`id_admin`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `client`
+  ADD CONSTRAINT `client_ibfk_1` FOREIGN KEY (`id_admin`) REFERENCES `admin` (`id_admin`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `riwayat`
 --
 ALTER TABLE `riwayat`
-  ADD CONSTRAINT `riwayat_ibfk_1` FOREIGN KEY (`id_pasien`) REFERENCES `pasien` (`id_pasien`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `riwayat_ibfk_1` FOREIGN KEY (`id_client`) REFERENCES `client` (`id_client`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

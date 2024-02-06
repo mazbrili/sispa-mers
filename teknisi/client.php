@@ -1,7 +1,7 @@
 <?php include '_header.php'; 
 
-include "../controller/c_Pasien.php";
-$p = new Pasien;
+include "../controller/c_client.php";
+$p = new client;
 ?>
 <!-- ============================================================== -->
 <!-- Page wrapper  -->
@@ -13,17 +13,17 @@ $p = new Pasien;
     <div class="page-breadcrumb">
         <div class="row align-items-center">
             <div class="col-5">
-                <h4 class="page-title">Manajemen Pasien</h4>
+                <h4 class="page-title">Manajemen client</h4>
                 <div class="d-flex align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Pasien</li>
+                        <li class="breadcrumb-item active" aria-current="page">client</li>
                     </ol>
                 </div>
             </div>
             <div class="col-7">
                 <div class="text-right upgrade-btn">
-                    <a href="tpasien.php" class="btn btn-danger text-white"><i class="mdi mdi-plus"></i> Tambah Pasien</a>
+                    <a href="tclient.php" class="btn btn-danger text-white"><i class="mdi mdi-plus"></i> Tambah client</a>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ $p = new Pasien;
                                 <thead style="background-color: #7f8c8d; color: white;">
                                   <tr>
                                     <th style="color: white;" width="5%">ID</th>
-                                    <th style="color: white;">Nama Pasien</th>
+                                    <th style="color: white;">Nama client</th>
                                     <th style="color: white;">Tanggal Lahir</th>
                                     <th style="color: white;">Aksi</th>
                                 </tr>
@@ -74,11 +74,11 @@ $p = new Pasien;
                                         <td><?php print $d['nama']; ?></td>
                                         <td><?php print $d['tgl_lahir']; ?></td>
                                         <td>
-                                            <a href="riwayatrm.php?id_pasien=<?php print $d['id_pasien']; ?>" class="btn btn-info btn-simple btn-xs text-white" title="Lihat Diagnosa Pasien"><i class="mdi mdi-eye"></i></a>
+                                            <a href="riwayatrm.php?id_client=<?php print $d['id_client']; ?>" class="btn btn-info btn-simple btn-xs text-white" title="Lihat Diagnosa client"><i class="mdi mdi-eye"></i></a>
 
-                                            <a href="epasien.php?id_pasien=<?php print $d['id_pasien']; ?>" class="btn btn-info btn-simple btn-xs text-white" title="Edit Data Pasien"><i class="mdi mdi-lead-pencil"></i></a>
+                                            <a href="eclient.php?id_client=<?php print $d['id_client']; ?>" class="btn btn-info btn-simple btn-xs text-white" title="Edit Data client"><i class="mdi mdi-lead-pencil"></i></a>
 
-                                            <a onclick="if (! confirm('Apakah anda yakin akan menghapus pasien dari daftar ?')) { return false; }" href="../ProsesA/d_pasien.php?id_pasien=<?php print $d['id_pasien']; ?>" class="btn btn-danger btn-simple btn-xs text-white" title="Hapus Pasien"><i class="fa fa-times"></i></a>
+                                            <a onclick="if (! confirm('Apakah anda yakin akan menghapus client dari daftar ?')) { return false; }" href="../ProsesA/d_client.php?id_client=<?php print $d['id_client']; ?>" class="btn btn-danger btn-simple btn-xs text-white" title="Hapus client"><i class="fa fa-times"></i></a>
                                         </td>
                                     </tr>
                                 <?php }} ?>

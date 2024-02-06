@@ -2,7 +2,7 @@
 
 include "../controller/c_Rekam.php";
 $p = new Rekam;
-$data = $p->TampilRPasien($_GET['id_pasien']);
+$data = $p->TampilRclient($_GET['id_client']);
 ?>
 <!-- ============================================================== -->
 <!-- Page wrapper  -->
@@ -18,14 +18,14 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                 <div class="d-flex align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="pasien.php">Pasien</a></li>
+                        <li class="breadcrumb-item"><a href="client.php">client</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Rekam Medis</li>
                     </ol>
                 </div>
             </div>
             <div class="col-7">
                 <div class="text-right upgrade-btn">
-                    <a href="diagnosa.php?id_pasien=<?php print $_GET['id_pasien'] ?>" class="btn btn-danger text-white"><i class="mdi mdi-plus"></i> Diagnosa</a>
+                    <a href="diagnosa.php?id_client=<?php print $_GET['id_client'] ?>" class="btn btn-danger text-white"><i class="mdi mdi-plus"></i> Diagnosa</a>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                                             <td><?php print $r['persentase']; ?></td>
                                             <td>
                                                 
-                                                <a onclick="if (! confirm('Apakah anda yakin akan menghapus riwayat rekam medis dari daftar ?')) { return false; }" href="../ProsesA/d_rekam.php?id_riwayat=<?php print $r['id_riwayat']; ?>&id_pasien=<?php print $_GET['id_pasien']; ?>" class="btn btn-danger btn-simple btn-xs text-white" title="Hapus Rekam Medis"><i class="fa fa-times"></i></a>
+                                                <a onclick="if (! confirm('Apakah anda yakin akan menghapus riwayat rekam medis dari daftar ?')) { return false; }" href="../ProsesA/d_rekam.php?id_riwayat=<?php print $r['id_riwayat']; ?>&id_client=<?php print $_GET['id_client']; ?>" class="btn btn-danger btn-simple btn-xs text-white" title="Hapus Rekam Medis"><i class="fa fa-times"></i></a>
                                             </td>
                                         </tr>
                                     <?php }} ?>

@@ -5,7 +5,7 @@ $pt = new Gejala;
 
 include "../controller/c_Rekam.php";
 $p = new Rekam;
-$data = $p->TampilRPasien($_GET['id_pasien']);
+$data = $p->TampilRclient($_GET['id_client']);
 ?>
 <style>
 /* The container */
@@ -88,7 +88,7 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                 <div class="d-flex align-items-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="pasien.php">Pasien</a></li>
+                        <li class="breadcrumb-item"><a href="client.php">client</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Diagnosa</li>
                     </ol>
                 </div>
@@ -116,7 +116,7 @@ $data = $p->TampilRPasien($_GET['id_pasien']);
                     <div class="card-body">
                         <div class="table-responsive">
                             <form method="post" action="hdiagnosa.php">
-                                <input type="hidden" name="id_pasien" value="<?php print $_GET['id_pasien'] ?>">
+                                <input type="hidden" name="id_client" value="<?php print $_GET['id_client'] ?>">
                                 
                                 <h2>Silahkan pilih apa yang anda lihat/dengar</h2><hr>
                                 <?php

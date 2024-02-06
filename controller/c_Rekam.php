@@ -5,14 +5,15 @@
 class Rekam
 {
 	
-	function TampilRPasien($id_pasien)
+	function TampilRclient($id_client)
 	{
 		include '../koneksi/koneksi.php';
-		$query = mysqli_query($con, "SELECT * FROM riwayat where id_pasien = '$id_pasien'");
+		$data = [];  // Initialize the array
+		$query = mysqli_query($con, "SELECT * FROM riwayat where id_client = '$id_client'");
 		$i = 0;
 		while($d = mysqli_fetch_array($query))
 		{
-			$data[$i]['id_pasien'] = $d['id_pasien'];
+			$data[$i]['id_client'] = $d['id_client'];
 			$data[$i]['id_riwayat'] = $d['id_riwayat'];
 			$data[$i]['tanggal'] = $d['tanggal'];
 			$data[$i]['gejala'] = $d['gejala'];
